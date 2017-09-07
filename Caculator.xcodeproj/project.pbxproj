@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82521A01F61BE030064889B /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F825219F1F61BE030064889B /* CalculatorBrain.swift */; };
 		F8C857C91F5FDE350085B3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C857C81F5FDE350085B3B6 /* AppDelegate.swift */; };
 		F8C857CB1F5FDE350085B3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C857CA1F5FDE350085B3B6 /* ViewController.swift */; };
 		F8C857CE1F5FDE350085B3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C857CC1F5FDE350085B3B6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F825219F1F61BE030064889B /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		F8C857C51F5FDE350085B3B6 /* Caculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C857C81F5FDE350085B3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8C857CA1F5FDE350085B3B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C857CA1F5FDE350085B3B6 /* ViewController.swift */,
+				F825219F1F61BE030064889B /* CalculatorBrain.swift */,
 				F8C857CC1F5FDE350085B3B6 /* Main.storyboard */,
 				F8C857DA1F5FDE6E0085B3B6 /* Supporting Files */,
 			);
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C857CB1F5FDE350085B3B6 /* ViewController.swift in Sources */,
+				F82521A01F61BE030064889B /* CalculatorBrain.swift in Sources */,
 				F8C857C91F5FDE350085B3B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NZJX3A82CX;
 				INFOPLIST_FILE = Caculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honu.hwjung.lecture.Caculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NZJX3A82CX;
 				INFOPLIST_FILE = Caculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honu.hwjung.lecture.Caculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +318,7 @@
 				F8C857D91F5FDE360085B3B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
