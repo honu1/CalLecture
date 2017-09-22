@@ -21,50 +21,49 @@ class CalculatorBrain {
     }
 
     var operations: Dictionary<String, Operation> = [
-        "π" : Operation.Constant, //M_PI,
-        "e" : Operation.Constant, //M_E,
-        "√" : Operation.UnaryOperation, //sqrt
-        "cos" : Operation.UnaryOperation //cos
+        "π" : .Constant(Double.pi),
+        "e" : .Constant(M_E),
+        "√" : .UnaryOperation(sqrt), //sqrt
+        "cos" : .UnaryOperation(cos), //cos
+//        "+" : .BinaryOperation(add),
+//        "-" : .BinaryOperation{(firstValue: Double, secondValue: Double) in Double},
+//        "*" : .BinaryOperation{(firstValue: Double, secondValue: Double) -> Double},
+//        "/" : .BinaryOperation{(firstValue: Double, secondValue: Double) -> Double}
     ]
     
+    func add(firstValue: Double, secondValue: Double) -> Double {
+        return firstValue + secondValue
+    }
+    
     enum Operation {
-        case Constant
-        case UnaryOperation
-        case BinaryOperation
+        case Constant(Double)
+        case UnaryOperation((Double) -> Double)
+        case BinaryOperation((Double, Double) -> Double)
         case Equals
     }
     
     func performOperation(symbol: String) {
-//        
-//        if let operation = operations[symbol] {
-//            switch operation {
-//            case .Cons:
-//                <#code#>
-//            default:
-//                <#code#>
-//            } operation {
-//                
-//            }
+
+        if let operation = operations[symbol] {
+            switch operation {
+            case .Constant(let value):
+                accumlator = value
+                break;
+            case .UnaryOperation(let function):
+                accumlator = function(accumlator)
+                break;
+            case .BinaryOperation(let function):
+                //accumlator =
+                break;
+            default:
+                break;
+            }
         }
-        
-//        switch symbol {
-//        case "π":
-//            accumlator = Double.pi
-//            break
-//        case "√":
-//            accumlator = sqrt(accumlator)
-//            break
-//        case "cos":
-//            accumlator = cos(accumlator)
-//            break
-//        default:
-//            break
-//        }
-//    }
+    }
     
     var result: Double {
         get {
-            return 0.0
+            return accumlator
         }
     }
     
